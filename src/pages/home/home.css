@@ -1,0 +1,38 @@
+#movies{
+    /* border: 1px solid #f00 */
+    scroll-behavior: smooth !important;
+      
+}
+
+#movies .col{
+    /* border: 1px solid #0ff; */
+
+}
+#movies .card{
+    overflow: hidden;
+    position: relative;
+
+}
+#movies .card .card-body{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translate(-0%,-60px);
+    height: 100%;
+    z-index: 99;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.278);
+    border-radius: 16px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(7.9px);
+    color: #111;
+    transition: all 0.2s ease-in-out;
+}
+#movies .card:hover .card-body{
+    top: 10%;
+    transform: translate(0%,0);
+
+}
